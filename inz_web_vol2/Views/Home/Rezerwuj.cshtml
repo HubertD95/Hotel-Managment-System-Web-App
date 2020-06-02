@@ -1,0 +1,60 @@
+﻿@model inz_web_vol2.Models.Rezerwacja
+
+@{
+    ViewBag.Title = "Rezerwuj";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<div>@ViewBag.data_poczatek , @ViewBag.data_koniec</div>*@
+
+
+<h2>Informacje o rezerwującym:</h2>
+<center><font color="red"><b> @ViewBag.Error </b></font></center>
+
+@using (Html.BeginForm("DodajRezerwacje", "Home", new { data1 = ViewBag.data_poczatek, data2 = ViewBag.data_koniec, nr_pok = ViewBag.Nr_pok, error = ViewBag.Error, imie = ViewBag.Imie, nazwisko = ViewBag.Nazwisko, nrtel = ViewBag.Numer, opis = ViewBag.Opis }, FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                @Html.Label("Imie*:")
+            </td>
+            <td> <input type="text" id="imie" name="imie" value="@ViewBag.Imie" /></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.Label("Nazwisko*:")
+            </td>
+            <td><input type="text" id="nazwisko" name="nazwisko" value="@ViewBag.Nazwisko"/></td>
+        </tr>
+        <tr>
+            <td>
+                @Html.Label("Numer telefonu*:")
+            </td>
+            <td><input type="text" id="nrtel" name="nrtel" value="@ViewBag.Numer"/></td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.Label("Posiłki:")
+            <td>
+                <select id="Select" name="Select">
+                    <option value="0">Brak</option>
+                    <option value="1">1 posiłek</option>
+                    <option value="2">2 posiłki</option>
+                    <option value="3">3 posiłki</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.Label("Dodatkowe informacje:")
+            </td>
+            <td><textarea id="opis" name="opis" cols="30" rows="4">@ViewBag.Opis</textarea></td>
+        </tr>
+    </table>
+    <hr />
+
+    <center>  <input type="submit" value="Wyślij rezerwację" /></center>
+}
+
+

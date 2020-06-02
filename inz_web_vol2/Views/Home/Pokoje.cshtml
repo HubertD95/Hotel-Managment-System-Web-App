@@ -1,0 +1,31 @@
+﻿@model IEnumerable<inz_web_vol2.Models.MySqlClass>
+
+@{
+    ViewBag.Title = "Pokoje";
+}
+
+<h1 style="text-align:center">Dostępne pokoje</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+                @foreach (inz_web_vol2.Models.MySqlClass details in Model)
+                 {
+                    <a href='@Url.Action("Rezerwuj", "Home", new { id = details.Nr_pok, data1 = ViewBag.data_poczatek, data2 = ViewBag.data_koniec})'>
+                        <h2 class="post-title">
+                            @details.Typ
+                        </h2>
+                        <h3 class="post-subtitle">
+                            @details.Opis
+                        </h3>
+                    </a>
+                    <p class="post-meta">
+                        Cena: @details.Cena
+                    </p>
+                    <hr>
+                 }
+            </div>
+        </div>
+    </div>
+</div>

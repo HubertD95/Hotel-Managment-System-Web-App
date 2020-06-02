@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="inz_web_vol2.Controllers.HomeController">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAkEAAIAAAAEADAAQgAAoACAAAIAAAAEAAAAwAAE=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="inz_web_vol2.Models.Daty">
+    <Position X="5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Daty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="inz_web_vol2.Models.DatyPoczatekKoniec">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Models\DatyPoczatekKoniec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="inz_web_vol2.Models.MySqlClass">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAABAAAAgAgAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MySqlClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="inz_web_vol2.Models.Rezerwacja">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAIAAAAgABAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Models\Rezerwacja.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
